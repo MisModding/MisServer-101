@@ -2,7 +2,7 @@
 Miscreated server setup and configuration guide, put together by 4iY with the help of colleagues from the testing and dev team. 
 If you have any questions, you should join the UnOfficial MisModding Discord at this link: https://discord.gg/ttdzgzp
 # Setting up a server
-In Miscreated players may host their own servers with their own configurations options which change the balance of the gameplay, or just slight tweaks for something you and your group of friends are not fond of.
+   In Miscreated players may host their own servers with their own configurations options which change the balance of the gameplay, or just slight tweaks for something you and your group of friends are not fond of.
    It has to be said that hosting a server is free, and super easy – you may start and run a server on your PC assuming it’s powerful enough *(you would want no less than 12 GBs of RAM and at least 4 actual cores in your CPU as well as a stable broadband connection).* Spafbi, one of the game’s testers, has created a simplified script to install and run the server without any bells and whistles, here’s a link to it: https://github.com/Spafbi/simplified-miscreated-server-setup/wiki. Of course, you can look up hosting providers online, but that would not be free – although admittedly largely more stable and reliable than someone’s home PC.
    In any case, setting up the server is simple, but configuring it requires quite a bit of expertise. Luckily, you are not the first person to go through this needy process, so this guide will help you wrap your head around it much quicker and easier.
 # Actual config
