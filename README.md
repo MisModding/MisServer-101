@@ -8,7 +8,7 @@ In Miscreated players may host their own servers with their own configurations o
 # Actual config
 The file that has all the server configuration options is called `hosting.cfg` – here you would put every single option that you want changed over the ‘vanilla’ settings. By the way, here is how vanilla settings look like:
 
-![](Pics/VanillaSetting.png)
+![](Pics/VanillaSettings.png)
 
    The automated script by Spafbi will prompt you to input your server’s name and HTTP password *(it is best to use latin letters and numbers without special symbols)*, required to execute commands via RCON to affect the server. You may change them later on in the hosting.cfg file, of course.
    Pretty much everything needed to set the server up is in this link by the developers: https://servers.miscreatedgame.com/help, but this guide will add something on top of that for certain positions. 
