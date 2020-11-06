@@ -45,8 +45,8 @@ g_gameRules_faction3_dmg_f0=0.0  -- Just for example, Faction3 cannot damage pla
 [SEE BELOW] g_gameRules_faction3_equip = ""
 
 ### Faction Equip management
-Factions can also have 'equip' (-ment), items with which anyone inside that factions spawns (after they respawn, of course). This system has some nuances to it that not many people know, so I'll delve into them here. 
+Factions can also have 'equip' (-ment), items with which anyone inside that factions spawns (after they respawn, of course). This system has nuances to it that not many people know, so I'll delve into them here. 
 
-Firstly, the order in which items are put in MATTERS. As an example, if you put `"AT15;STANAGx30"`, the magazine will already be in the weapon once you respawn. However, if you switch these around to `"STANAGx30;AT15`, the magazine will go into the first CLOTHING slot available (if none are free or none exist, it wont appear altogether). This also works for clothing items, like so: `"DuffelBagTan;Rags;FannyPackGreen"` *(this will put the Rags into the DuffelBagTan)* and `"FannyPackGreen;9mmx30;DuffelBagTan;Rags"` *(this will also put Rags into the DuffelBagTan and the 9mmx30 into the FannyPackGreen)*. 
+The order in which items are put in MATTERS. As an example, if you put `"AT15;STANAGx30"`, the magazine will already be in the weapon once you respawn. However, if you switch these around to `"STANAGx30;AT15`, the magazine will go into the first CLOTHING slot available (if none are free or none exist, it wont appear altogether). This also works for clothing items, like so: `"DuffelBagTan;Rags;FannyPackGreen"` *(this will put the Rags into the DuffelBagTan)* and `"FannyPackGreen;9mmx30;DuffelBagTan;Rags"` *(this will also put Rags into the DuffelBagTan and the 9mmx30 into the FannyPackGreen)*. 
 
 Keeping this in mind, you can build fairly diverse systems with different factions for people who want to PvP and those who dont. One notice - you CANNOT leave or join another faction after you've already joined one, unless you have a mod that allows that.
