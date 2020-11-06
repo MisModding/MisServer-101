@@ -55,3 +55,7 @@ Keeping this in mind, you can build fairly diverse systems with different factio
 
 # Conclusion
 As you saw, setting up a server is rather simple if you know where to look and what to do. That said, I may have easily overlooked something in this guide, so if you have something to add to it, contact me on Discord ( `-4iY-#4314` ) so I can add / fix it. If you have questions to ask, best ask them publicly in the Discord server I sent above as I am not always around.
+
+# Extras and reference videos
+`https://www.youtube.com/watch?v=_dG4FuvWQ1Q Using a mod on a dedicated server`
+
