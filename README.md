@@ -52,3 +52,6 @@ Factions can also have 'equip' (-ment), items with which anyone inside that fact
 The order in which items are put in MATTERS. As an example, if you put `g_gameRules_faction3_equip = "AT15;STANAGx30"`, the magazine will already be in the weapon once you respawn. However, if you switch these around to `"STANAGx30;AT15`, the magazine will go into the first CLOTHING slot available (if none are free or none exist, it wont appear altogether). This also works for clothing items, like so: `"DuffelBagTan;Rags;FannyPackGreen"` *(this will put the Rags into the DuffelBagTan)* and `"FannyPackGreen;9mmx30;DuffelBagTan;Rags"` *(this will also put Rags into the DuffelBagTan and the 9mmx30 into the FannyPackGreen)*. 
 
 Keeping this in mind, you can build fairly diverse systems with different factions for people who want to PvP and those who dont. One notice - you CANNOT leave or join another faction after you've already joined one, unless you have a mod that allows that.
+
+# Conclusion
+As you saw, setting up a server is rather simple if you know where to look and what to do. That said, I may have easily overlooked something in this guide, so if you have something to add to it, contact me on Discord ( `-4iY-#4314` ) so I can add / fix it. If you have questions to ask, best ask them publicly in the Discord server I sent above as I am not always around.
