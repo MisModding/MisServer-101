@@ -15,7 +15,9 @@ The file that has all the server configuration options is called `hosting.cfg` â
    ### NOTICE
    There is one warning that I have to give: if you are putting in a setting in hosting.cfg, it has to be done in this syntax: `command=VALUE`, such as `g_pinglimit=0`, and if the command is being executed via RCON you must avoid the equals sign (=) and replace it with a single space. Note: commands executed via RCON are only in effect until the server restarts, it will reset to whatever is in the hosting.cfg or to default on startup. Also, please note that all commands to ban / whitelist are to be done via RCON only!
 # Additions to the link above
-   During the last few Miscreated updates, some new CVARs have been added, and I figure it's best to add them here.
+*How do I add mods to my server?* -It's never been simpler. All you need to do is add this line to your hosting.cfg  `steam_ugc=2238425283,2212323283,2218782283` (yes, as many as you want, separated by a comma with NO spaces). The IDs of desired mods are taken from the URLs of the mods. If you do not see URLs, navigate into your Steam client, in the top-left corner click Steam -> Settings, here find the Interface tab in the list and locate the 'Display URLs where possible' option. Tick it so it's on, then click OK. A typical URL of a mod looks like this: `https://steamcommunity.com/sharedfiles/filedetails/?id=2313425782`, where the `2313425782` is its ID.
+
+During the last few Miscreated updates, some new CVARs have been added, and I figure it's best to add them here.
 
 `ism_percent` - range 0 to 90, the percent of item spawners that can possibly spawn loot - default is 20
 
