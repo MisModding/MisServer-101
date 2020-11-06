@@ -17,17 +17,17 @@ The file that has all the server configuration options is called `hosting.cfg` â
 # Additions to the link above
    During the last few Miscreated updates, some new CVARs have been added, and I figure it's best to add them here.
 
-ism_percent - range 0 to 90, the percent of item spawners that can possibly spawn loot - default is 20
+`ism_percent` - range 0 to 90, the percent of item spawners that can possibly spawn loot - default is 20
 
-ism_maxCount - range 0 to 5000, the maximum number of item spawners that can have a spawned item concurrently - default is 750
+`ism_maxCount` - range 0 to 5000, the maximum number of item spawners that can have a spawned item concurrently - default is 750
 
-as_corpseCountMax - the maximum number of AI corpses that can exist at once - default is 20
+`as_corpseCountMax` - the maximum number of AI corpses that can exist at once - default is 20
 
-as_corpseRemovalTime - the time in seconds until an AI corpse is forcibly removed - default is 300
+`as_corpseRemovalTime` - the time in seconds until an AI corpse is forcibly removed - default is 300
 
-g_playerWeightLimit - the maximum amount of weight a player can carry - default is 40 (kg)
+`g_playerWeightLimit` - the maximum amount of weight a player can carry - default is 40 (kg)
 
-g_maxHealthMultiplier - scales the default health for a player - default is 1, don't go beyond 5 - experimental
+`g_maxHealthMultiplier` - scales the default health for a player - default is 1, don't go beyond 5 - experimental
 
 # Faction system explanation
    Per player request, this guide will also feature a 'better' explanation for the faction system in Miscreated. Please refer to this link: https://servers.miscreatedgame.com/help for the base details.
