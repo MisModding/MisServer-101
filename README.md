@@ -16,9 +16,15 @@ The file that has all the server configuration options is called `hosting.cfg` â
    There is one warning that I have to give: if you are putting in a setting in hosting.cfg, it has to be done in this syntax: `command=VALUE`, such as `g_pinglimit=0`, and if the command is being executed via RCON you must avoid the equals sign (=) and replace it with a single space. Note: commands executed via RCON are only in effect until the server restarts, it will reset to whatever is in the hosting.cfg or to default on startup. Also, please note that all commands to ban / whitelist are to be done via RCON only!
 # Additions to the link above
    During the last few Miscreated updates, some new CVARs have been added, and I figure it's best to add them here.
+
 ism_percent - range 0 to 90, the percent of item spawners that can possibly spawn loot - default is 20
+
 ism_maxCount - range 0 to 5000, the maximum number of item spawners that can have a spawned item concurrently - default is 750
+
 as_corpseCountMax - the maximum number of AI corpses that can exist at once - default is 20
+
 as_corpseRemovalTime - the time in seconds until an AI corpse is forcibly removed - default is 300
+
 g_playerWeightLimit - the maximum amount of weight a player can carry - default is 40 (kg)
+
 g_maxHealthMultiplier - scales the default health for a player - default is 1, don't go beyond 5 - experimental
