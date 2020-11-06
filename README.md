@@ -28,3 +28,25 @@ as_corpseRemovalTime - the time in seconds until an AI corpse is forcibly remove
 g_playerWeightLimit - the maximum amount of weight a player can carry - default is 40 (kg)
 
 g_maxHealthMultiplier - scales the default health for a player - default is 1, don't go beyond 5 - experimental
+
+# Faction system explanation
+   Per player request, this guide will also feature a 'better' explanation for the faction system in Miscreated. Please refer to this link: https://servers.miscreatedgame.com/help for the base details.
+   
+   The faction system in Miscreated is quite flexible - it allows members to join different groups that have pre-defined damage, etc. to and from each other. Let me show you how to build a faction system.
+
+To start with, there are three 'hardcoded' factions that you cannot change - these being 0 (players outside of any faction), 1 (AI - mutants, animals...) and 2 (bases). You can manage damage to and from these three, too. E.g., if you want bases to be unraidable, just add this command to your hosting.cfg: `g_gameRules_faction0_dmg_f2=0.0` . What this does is it makes the damage FROM faction 0 (players) TO faction 2 (bases) 0.0 (none). Using this logic, you can set up damage between the base factions as well as those you define. Let me show you how to make a custom faction, now. I'll go over each line and explain what it does.
+
+g_gameRules_faction3=1  -- Enable Faction3 
+
+g_gameRules_faction3_name="MyFaction"  -- Faction3's name (player would input `!MyFaction` in chat to join it)
+
+g_gameRules_faction3_dmg_f0=0.0  -- Just for example, Faction3 cannot damage players outside of factions.
+
+[SEE BELOW] g_gameRules_faction3_equip = ""
+
+### Faction Equip management
+Factions can also have 'equip' (-ment), items with which anyone inside that factions spawns (after they respawn, of course). This system has some nuances to it that not many people know, so I'll delve into them here. 
+
+Firstly, the order in which items are put in MATTERS. As an example, if you put `"AT15;STANAGx30"`, the magazine will already be in the weapon once you respawn. However, if you switch these around to `"STANAGx30;AT15`, the magazine will go into the first CLOTHING slot available (if none are free or none exist, it wont appear altogether). This also works for clothing items, like so: `"DuffelBagTan;Rags;FannyPackGreen"` *(this will put the Rags into the DuffelBagTan)* and `"FannyPackGreen;9mmx30;DuffelBagTan;Rags"` *(this will also put Rags into the DuffelBagTan and the 9mmx30 into the FannyPackGreen)*. 
+
+Keeping this in mind, you can build fairly diverse systems with different factions for people who want to PvP and those who dont. One notice - you CANNOT leave or join another faction after you've already joined one, unless you have a mod that allows that.
