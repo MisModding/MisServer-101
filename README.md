@@ -13,7 +13,7 @@ The file that has all the server configuration options is called `hosting.cfg` â
    The automated script by Spafbi will prompt you to input your serverâ€™s name and HTTP password *(it is best to use latin letters and numbers without special symbols)*, required to execute commands via RCON to affect the server. You may change them later on in the hosting.cfg file, of course.
    Pretty much everything needed to set the server up is in this link by the developers: https://servers.miscreatedgame.com/help, but this guide will add something on top of that for certain positions. 
    ### NOTICE
-   There is one warning that I have to give: if you are putting in a setting in hosting.cfg, it has to be done in this syntax: `command=VALUE`, such as `g_pinglimit=0`, and if the command is being executed via RCON you must avoid the equals sign (=) and replace it with a single space. Note: commands executed via RCON are only in effect until the server restarts, it will reset to whatever is in the hosting.cfg or to default on startup. Also, please note that all commands to ban / whitelist are to be done via RCON only!
+   There is one warning that I have to give: if you are putting in a setting in hosting.cfg, it has to be done in this syntax: `command=VALUE`, such as `g_pinglimit=0`, and if the command is being executed via RCON you must avoid the equals sign (=) and replace it with a single space (it'd look like this: `g_pingLimit 0` ). Note: commands executed via RCON are only in effect until the server restarts, it will reset to whatever is in the hosting.cfg or to default on startup. Also, please note that all commands to ban / whitelist are to be done via RCON only!
 # Additions to the link above
 *How do I add mods to my server?* -It's never been simpler. All you need to do is add this line to your hosting.cfg  `steam_ugc=2238425283,2212323283,2218782283` (yes, as many as you want, separated by a comma with NO spaces). The IDs of desired mods are taken from the URLs of the mods. If you do not see URLs, navigate into your Steam client, in the top-left corner click Steam -> Settings, here find the Interface tab in the list and locate the 'Display URLs where possible' option. Tick it so it's on, then click OK. A typical URL of a mod looks like this: `https://steamcommunity.com/sharedfiles/filedetails/?id=2313425782`, where the `2313425782` is its ID.
 
@@ -57,5 +57,5 @@ Keeping this in mind, you can build fairly diverse systems with different factio
 As you saw, setting up a server is rather simple if you know where to look and what to do. That said, I may have easily overlooked something in this guide, so if you have something to add to it, contact me on Discord ( `-4iY-#4314` ) so I can add / fix it. If you have questions to ask, best ask them publicly in the Discord server I sent above as I am not always around.
 
 # Extras and reference videos
-`https://www.youtube.com/watch?v=_dG4FuvWQ1Q Using a mod on a dedicated server`
+https://www.youtube.com/watch?v=_dG4FuvWQ1Q Using a mod on a dedicated server
 
