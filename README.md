@@ -38,6 +38,7 @@ During the last few Miscreated updates, some new CVARs have been added, and I fi
 
 To start with, there are three 'hardcoded' factions that you cannot change - these being 0 (players outside of any faction), 1 (AI - mutants, animals...) and 2 (bases). You can manage damage to and from these three, too. E.g., if you want bases to be unraidable, just add this command to your hosting.cfg: `g_gameRules_faction0_dmg_f2=0.0` . What this does is it makes the damage FROM faction 0 (players) TO faction 2 (bases) 0.0 (none). Using this logic, you can set up damage between the base factions as well as those you define. Let me show you how to make a custom faction, now. I'll go over each line and explain what it does.
 
+```ini
 g_gameRules_faction3=1  -- Enable Faction3 
 
 g_gameRules_faction3_name="MyFaction"  -- Faction3's name (player would input `!MyFaction` in chat to join it)
@@ -45,6 +46,7 @@ g_gameRules_faction3_name="MyFaction"  -- Faction3's name (player would input `!
 g_gameRules_faction3_dmg_f0=0.0  -- Just for example, Faction3 cannot damage players outside of factions.
 
 [SEE BELOW] g_gameRules_faction3_equip=""
+``` 
 
 ### Faction Equip management
 Factions can also have 'equip' (-ment), items with which anyone inside that factions spawns (after they respawn, of course). This system has nuances to it that not many people know, so I'll delve into them here. 
