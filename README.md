@@ -44,10 +44,12 @@ g_gameRules_faction3_name="MyFaction"  -- Faction3's name (player would input `!
 
 g_gameRules_faction3_dmg_f0=0.0  -- Just for example, Faction3 cannot damage players outside of factions.
 
-[SEE BELOW] g_gameRules_faction3_equip = ""
+[SEE BELOW] g_gameRules_faction3_equip=""
 
 ### Faction Equip management
 Factions can also have 'equip' (-ment), items with which anyone inside that factions spawns (after they respawn, of course). This system has nuances to it that not many people know, so I'll delve into them here. 
+
+The line to manage faction equipment, as mentioned above, is g_gameRules_factionX_equip=""  , X being the faction number. By the way, if you put 0 instead of X, all the equipment from that line will adjust items of *all* players outside of any faction (e.g. when first spawning into a server).
 
 The order in which items are put in MATTERS. As an example, if you put `g_gameRules_faction3_equip = "AT15;STANAGx30"`, the magazine will already be in the weapon once you respawn. However, if you switch these around to `"STANAGx30;AT15`, the magazine will go into the first CLOTHING slot available (if none are free or none exist, it wont appear altogether). This also works for clothing items, like so: `"DuffelBagTan;Rags;FannyPackGreen"` *(this will put the Rags into the DuffelBagTan)* and `"FannyPackGreen;9mmx30;DuffelBagTan;Rags"` *(this will also put Rags into the DuffelBagTan and the 9mmx30 into the FannyPackGreen)*. 
 
