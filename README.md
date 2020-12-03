@@ -3,7 +3,9 @@ Miscreated server setup and configuration guide, put together by 4iY with the he
 If you have any questions, you should join the UnOfficial MisModding Discord at this link: https://discord.gg/ttdzgzp
 # Setting up a server
    In Miscreated players may host their own servers with their own configuration options which change the balance of the gameplay, or just slight tweaks for something you and your group of friends are not fond of.
+   
    It has to be said that hosting a server is free, and super easy – you may start and run a server on your PC assuming it’s powerful enough *(you would want no less than 12 GBs of RAM and at least 4 actual cores (or 6-8 threads) in your CPU as well as a stable broadband connection to run both the server and the game on the same machine).* Spafbi, one of the game’s testers, has created a simplified script to install and run the server without any bells and whistles, here’s a link to it: https://github.com/Spafbi/simplified-miscreated-server-setup/wiki. Of course, you can look up hosting providers online, but that would not be free – although admittedly largely more stable and reliable than someone’s home PC. I have to note one thing here: the *only* way to have full kiosk access on your server (the ability to deposit and withdraw game items in the kiosk) is to rent a "Central" i3D server, and on that type of server you **cannot** install any mods. Any other provider's or i3D's "Community" package servers will allow modifications to be installed but will not have kiosk access under any circumstances (skins are still available, of course).
+   
    In any case, setting up the server is simple, but configuring it requires quite a bit of expertise. Luckily, you are not the first person to go through this needy process, so this guide will help you wrap your head around it much quicker and easier.
 
 # Actual config
@@ -15,6 +17,7 @@ The file that has all the server configuration options is called `hosting.cfg` �
    Pretty much everything needed to set the server up is in this link by the developers: https://servers.miscreatedgame.com/help, but this guide will add something on top of that for certain positions - see category below. 
    ### NOTICE
    There is one warning that I have to give: if you are putting in a setting in hosting.cfg, it has to be done in this syntax: `command=VALUE`, such as `g_pinglimit=0`, and if the command is being executed via RCON you must avoid the equals sign (=) and replace it with a single space (it'd look like this: `g_pingLimit 0` ). Note: commands executed via RCON are only in effect until the server restarts, it will reset to whatever is in the hosting.cfg or to default on startup. Also, please note that all commands to ban / whitelist are to be done via RCON only!
+
 # Additions to the link above
 *How do I add mods to my server?* -It's never been simpler. All you need to do is add this line to your hosting.cfg  `steam_ugc=2238425283,2212323283,2218782283` (yes, as many as you want, separated by a comma with NO spaces). The IDs of desired mods are taken from the URLs of the mods. If you do not see URLs, navigate into your Steam client, in the top-left corner click Steam -> Settings, here find the Interface tab in the list and locate the 'Display URLs where possible' option. Tick it so it's on, then click OK. A typical URL of a mod looks like this: `https://steamcommunity.com/sharedfiles/filedetails/?id=2313425782`, where the `2313425782` is its ID.
 
